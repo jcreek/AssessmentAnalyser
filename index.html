@@ -113,7 +113,7 @@
             </div>
           </div>
           
-      <div id='studentdataentry' class="panel panel-default">
+      <div id='studentdataentry' class="panel panel-default" >
             <div class="panel-heading">
               <h3 class="panel-title">Student Data Entry</h3>
             </div>
@@ -133,29 +133,7 @@
               <h3 class="panel-title">Analysis By Cohort</h3>
             </div>
             <div class="panel-body">
-              <div ng-app="testApp">
-                <div ng-controller="testController as test">
-   
-                  <h1>{{title}}</h1>
-                  <ul>
-                   <li ng-repeat="product in products" ng-class="{bargain: product.price <= 6}" ng-show="{{product.forSale}}">
-                      {{product.name}} - {{product.price | currency: "£"}}
-                    </li>
-                  </ul>
-    
-                  <h3>Add Product</h3>
-                  <form ng-submit="addProduct()">
-                    <label>Name</label>
-                    <input type="text" ng-model="newProduct.name"/>
-                    <label>Price</label>
-                    <input type="number" step="any" ng-model="newProduct.price"/>
-                    <label>For Sale</label>
-                    <input type="checkbox" ng-model="newProduct.forSale" value="false"/>
-                    <input type="submit" value="Submit" />
-                  </form>
-  
-                </div>
-              </div>
+              
             </div>
           </div>
       
